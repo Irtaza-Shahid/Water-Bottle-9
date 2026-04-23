@@ -474,6 +474,37 @@
     .reviewer-name { font-weight: 600; color: white; font-size: 0.9rem; }
     .reviewer-sub  { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
  
+    /* ── CTA BANNER ── */
+    .cta-section {
+      background: linear-gradient(120deg, var(--wave), var(--ocean));
+      position: relative;
+      overflow: hidden;
+    }
+ 
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+    }
+ 
+    .cta-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: white;
+      margin-bottom: 16px;
+    }
+ 
+    .cta-sub {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      margin-bottom: 36px;
+    }
+
+    
   
    </style>
 </head>
