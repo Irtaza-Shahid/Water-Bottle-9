@@ -945,5 +945,19 @@
       });
     });
 
+     // Add to cart feedback
+    document.querySelectorAll('.btn-add-cart').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const orig = this.textContent;
+        this.textContent = '✓ Added!';
+        this.style.background = '#2d6a4f';
+        setTimeout(() => {
+          this.textContent = orig;
+          this.style.background = '';
+        }, 1500);
+      });
+    });
+  </script>
+
 </body>
 </html>
