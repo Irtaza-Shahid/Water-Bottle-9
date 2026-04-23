@@ -193,7 +193,44 @@
       background: rgba(255,255,255,0.12);
       color: white;
     }
-    </style>
+
+    /* Bottle image area */
+    .hero-bottle {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ 
+    .bottle-svg-wrap {
+      position: relative;
+      animation: floatBottle 4s ease-in-out infinite;
+    }
+ 
+    @keyframes floatBottle {
+      0%, 100% { transform: translateY(0px) rotate(-2deg); }
+      50%       { transform: translateY(-18px) rotate(2deg); }
+    }
+ 
+    .bottle-glow {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 40px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      filter: blur(12px);
+    }
+ 
+    /* SVG Bottle */
+    .bottle-svg { width: 220px; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.3)); }
+   
+   
+   
+   </style>
 
 </head>
 
