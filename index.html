@@ -26,6 +26,65 @@
       overflow-x: hidden;
     }
 
+     /* ── NAVBAR ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(10,79,110,0.1);
+    }
+ 
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--ocean);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+ 
+    .nav-logo span { color: var(--wave); }
+ 
+    .nav-links { list-style: none; display: flex; gap: 32px; }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--dark);
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--wave); }
+ 
+    .nav-cta {
+      background: var(--ocean);
+      color: white !important;
+      padding: 8px 22px;
+      border-radius: 50px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--wave) !important; color: white !important; }
+ 
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: var(--ocean);
+      border-radius: 2px;
+    }
+
     </head>
 <body>
     
